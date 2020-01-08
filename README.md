@@ -1,2 +1,2 @@
 # yahoo-financial-scraper
-Scrap equities financial data for inventment strategy
+Scrape equities financial data for inventment strategy
