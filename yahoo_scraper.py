@@ -23,11 +23,12 @@ statements = ["financials", "balance-sheet", "cash-flow"]
 filename = "{0}.xlsx"
 
 if __name__ == '__main__':
-    #Iterate
+    #Iterate over codes and create a new workbook for each
     for i in codes['Codes']:
         wb = openpyxl.Workbook()
         wb.save(filename.format(i))
-
+    
+    #Messy iteration over codes and writing to each workbook
     for i in codes['Codes']:
         book = load_workbook(filename.format(i))
         writer = pd.ExcelWriter(filename.format(i), engine = 'openpyxl')
