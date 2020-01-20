@@ -1,5 +1,5 @@
 # Yahoo Financial Scraper
-Scrape equities financial data for inventment strategy
+Scrape equities financial data from Yahoo Finance for investment strategy
 
 Goal
 -------------------
