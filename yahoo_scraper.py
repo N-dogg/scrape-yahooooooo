@@ -28,7 +28,7 @@ if __name__ == '__main__':
         wb = openpyxl.Workbook()
         wb.save(filename.format(i))
     
-    #Messy iteration over codes and writing to each workbook
+    #Messy iteration over codes and statements, writing each to the companys workbook
     for i in codes['Codes']:
         book = load_workbook(filename.format(i))
         writer = pd.ExcelWriter(filename.format(i), engine = 'openpyxl')
